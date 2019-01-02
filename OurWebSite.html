@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head><title>SaveThePlanet</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+
+<body style = "background: url(https://www.recycling.com/wp-content/uploads/2016/06/recycling-symbol-icon-solid-dark-green.png); background-size: 50%" > 
+<center>
+	<img scr="http://green.wikia.com/wiki/File:Recycle.jpg" height = 60 width = 60 " > 
+	<hr>
+	<h3>HOME | GOALS | DONATE | <a href="http://www.google.com">GOOGLE</a> | CONTACTS</h3>
+	<hr>
+</center>
+
+	This is <span id="changing">beautiful</span>
+<script>
+	// Array of words
+	var words = ['beautiful', 'cool', 'amazing'];
+
+	// Function that executes every 2000 milliseconds
+	setInterval(function() {
+    console.log("hello") 
+  	// Random number generator
+  	var randomNumber = Math.round( Math.random() * (words.length-1) );
+  	// Change the word in the span for a random one in the array of words
+     $('#changing').html( words[ randomNumber ] );
+	}, 1000);
+</script>
+
+
+
+</body>
+
+</html>

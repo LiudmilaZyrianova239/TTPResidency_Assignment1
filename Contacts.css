@@ -1,0 +1,72 @@
+.nav {
+	justify-content: space-between;
+	background-color: #333;
+	display: flex;
+	flex-direction: row; 
+	text-decoration: none;
+	border-bottom: solid;
+	border-color: black;
+	float: left;
+	color: white;
+	width: 100%;
+}
+.navbar {
+	list-style-type: none;
+	display: inline-block;
+}
+.footer {
+	background-color: #333;
+	display: inline-block;
+	text-decoration: none;
+	border-top: solid;
+	border-color: black;
+	color: white;
+	width: 100%;
+}
+.address {
+	float: left;
+}
+.contact { 
+	list-style: none;
+	float: left;
+}
+form {
+	display: flex;
+	flex-direction: column;
+}
+.copy {
+	float: right;
+	color: grey;
+}
+.page {
+	display: flex;
+	flex-direction: column;
+	float: left;
+	padding-left: 20px;
+}
+img {
+	max-width: 200px;
+	max-height: 300px;
+	vertical-align: sub;
+}
+li {
+	justify-content: space-between;
+	padding: 20px;
+}
+a {
+	justify-content: space-between;
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	color: grey;
+}
+h2 {
+	float: right;
+}
+@media only screen and (max-width: 600px) {
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+}

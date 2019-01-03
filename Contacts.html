@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head><title>SaveThePlanet</title>
+    <head>
+    	<title>SaveThePlanet</title>
     	<link rel="stylesheet" href="Contacts.css" type="text/css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 
-<body style = "background: url(https://media.istockphoto.com/photos/green-natural-background-picture-id649675876?k=6&m=649675876&s=612x612&w=0&h=TSRg-zhV5L7mxb-Wr1ft73JuhZ0qVgQaARa2JMANoy0=); background-size: 100%" > 
-<center>
-	<hr>
-	 <!-- <h3>HOME | GOALS | DONATE | <a href="http://www.google.com">GOOGLE</a> | CONTACTS</h3> -->
-	<h1>SAVE THE PLANET</h1>
-	<hr>
+<body style = "background: url(https://media.istockphoto.com/photos/green-natural-background-picture-id649675876?k=6&m=649675876&s=612x612&w=0&h=TSRg-zhV5L7mxb-Wr1ft73JuhZ0qVgQaARa2JMANoy0=); background-size: 100%"> 
 
 	<div class="nav">
-		<ul class="nav">
-			<li class="nav"><a class="nav"href="OurWebSite.html">Home</a></li>
-			<li class="nav"><a class="nav" href="Donation.html">Donation</a></li>
-			<li class="nav"><a class="nav" href="Contacts.html">Contacts</a></li>
+		<ul>
+			<li class="navbar"><h1>SAVE THE PLANET</h1></li>
+			<li class="navbar"><a href="OurWebSite.html">Home</a></li>
+			<li class="navbar"><a href="Donation.html">Donation</a></li>
+			<li class="navbar"><a href="Contacts.html">Contacts</a></li>
 		</ul>
 	</div>
-</center>
 
+	<div class="page">
+		<li class="contact"><h2>Meet the staff</h2></li>
+		<img src="kaitlin.jpeg">
+		<h3>Kaitlin Olsen</h3>
+		<h4>CEO</h4>
 
-	This is <span id="changing">beautiful</span>
-<script>
-	
-	var words = ['beautiful', 'cool', 'amazing'];		// Array of words	
-	setInterval ( function() {			// Function that executes every 2000 milliseconds  	
-  	var randomNumber = Math.round( Math.random() * (words.length-1) );		// Random number generator  	
-     $('#changing').html( words[ randomNumber ] );		// Change the word in the span for a random one in the array of words
-	}, 1000);
-</script>
+		<li class="contact"><h2>Visit Us!</h2></li>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12086.824804711241!2d-73.96912845717775!3d40.768486213018164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb5e90aa7d877ee1f!2sHunter+College!5e0!3m2!1sen!2sus!4v1546545226859" width="600" height="450" frameborder="5" style="border:5" allowfullscreen></iframe>
 
+		<li class="contact"><h2>Contact Us!</h2></li>
+		<form action="contact-submitted.html">
+	    <input type="text" name="name" placeholder="Name">
+	    <input type="email" name="subject" placeholder="Email">
+	    <input type="tel" name="subject" placeholder="Phone Number">
+	    <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+	    <input type="submit" value="Enter">
+		</form>
+	</div>
 
+	<div class="footer">
+		<p class="address">695 Park Ave New York, NY 10065</p>
+		<p class="copy">&copy; 2019.</p>
+	</div>
 
 </body>
 

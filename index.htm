@@ -1,10 +1,30 @@
 ﻿<!DOCTYPE html>
 <html>
-<body>
+	<head><title>SaveThePlanet</title>
+	</head>
+<center>
+<body> 
+	<img scr="recycle.jpg" height = 60 width = 60 alt="Recycle" > 
+	<hr>
+	<h3>HOME | GOALS | DONATE | CONTACTS</h3>
+	<hr>
 
-<h1>My First Heading</h1>
 
-<p>My first paragraph.</p>
+	This is <span id="changing">beautiful</span>
+<script>
+	// Array of words
+	var words = ['beautiful', 'cool', 'amazing'];
+	// Function that executes every 2000 milliseconds
+	setInterval(function() {
+        
+  	// Random number generator
+  	var randomNumber = Math.round( Math.random() * (words.length-1) );
+  	// Change the word in the span for a random one in the array of words
+  	$('#changing').html( words[ randomNumber ] );
+	}, 2000);
+</script>
+
 
 </body>
+</center>
 </html>

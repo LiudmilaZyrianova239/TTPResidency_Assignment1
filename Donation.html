@@ -1,214 +1,150 @@
 <!DOCTYPE html>
 <html>
-    <head><title>SaveThePlanet</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<style>
-
-p {
-	font-family: Arial, Helvetica, sans-serif;
-}	
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
-
-.active {
-  background-color: #4CAF50;
-}			
-
-
-/*LINK*/
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-
-
-/*BOX*/
-* {
-  box-sizing: border-box;
-}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.col-25 {
-  float: left;
-  width: 15%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 85%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
-
-
-		</style>
-	</head>
-
-<body style = "background: url(https://media.istockphoto.com/photos/green-natural-background-picture-id649675876?k=6&m=649675876&s=612x612&w=0&h=TSRg-zhV5L7mxb-Wr1ft73JuhZ0qVgQaARa2JMANoy0=); background-size: 200%" > 
-<center>
-	
-	<h1 style="color:#111;">Save The Planet</h1>
-	
-
-	<div class="nav">
-		<ul class="nav">
-			<li class="nav"><a class="active"href="OurWebSite.html">Home</a></li>
-			<li class="nav"><a class="nav" href="Donation.html">Donation</a></li>
-			<li class="nav"><a class="nav" href="Contacts.html">Contacts</a></li>
-			<li style="float:right"><a class="nav" href="OurWebSite.html">FAQ</a>
-		</ul>
-
-<p>You can be one of the many peope who influence the way our planet looks like. Let's add more recylcing bins on the street!</p>
-<p>If you want to donate, fill the application:</p>
-
-
-	
-<div class="container">
-		<form action="Thank you.html">
-		  <div class="row">
-			<div class="col-25">
-			  <label for="fname">First Name</label>
-			</div>
-			<div class="col-75">
-			  <input type="text" id="fname" name="firstname" placeholder="Your name">
-			</div>
-		  </div>
-
-		  <div class="row">
-			<div class="col-25">
-			  <label for="lname">Last Name</label>
-			</div>
-			<div class="col-75">
-			  <input type="text" id="lname" name="lastname" placeholder="Your last name">
-			</div>
-		  </div>
-
-		  <div class="row">
-				<div class="col-25">
-				  <label for="lname">Email</label>
-				</div>
-				<div class="col-75">
-				  <input type="text" id="lname" name="lastname" placeholder="Your email">
-				</div>
-			  </div>
-
-		  <div class="row">
-			<div class="col-25">
-			  <label for="country">Country</label>
-			</div>
-			<div class="col-75">
-			  <select id="country" name="country">
-				<option value="usa">USA</option>
-				<option value="australia">Australia</option>
-				<option value="canada">Canada</option>				
-			  </select>
-			</div>
-		  </div>
-
-		  <div class="row">
-				<div class="col-25">
-				  <label for="lname"> Card Number</label>
-				</div>
-				<div class="col-75">
-				  <input type="text" id="lname" name="lastname" placeholder="Your card number">
-				</div>
-			  </div>
-
-			<div class="row">
-				<div class="col-25">
-					<label for="lname">Amount</label>
-				</div>
-				<div class="col-75">
-					<input type="text" id="lname" name="lastname" placeholder="Amount of money you would like to donate">
-				</div>
-			</div>
-
-		  <div class="row">
-			<div class="col-25">
-			  <label for="subject">Comment</label>
-			</div>
-			<div class="col-75">
-			  <textarea id="subject" name="subject" placeholder="Write you comments and suggestions" style="height:200px"></textarea>
-			</div>
-		  </div>
-
-		  <div class="row">
-			<input type="submit" value="Submit" >
-		  </div>
-		</form>
-	</div>
-
-</body>
-
+   <head>
+      <title>SaveThePlanet</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="Contacts.css" type="text/css" />
+      <style>   
+         /*BOX*/
+         * {
+         box-sizing: border-box;
+         }
+         input[type=text], select, textarea {
+         width: 100%;
+         padding: 12px;
+         border: 1px solid #ccc;
+         border-radius: 4px;
+         resize: vertical;
+         }
+         label {
+         padding: 12px 12px 12px 0;
+         display: inline-block;
+         }
+         input[type=submit] {
+         background-color: #4CAF50;
+         color: white;
+         padding: 12px 20px;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+         float: right;
+         }
+         input[type=submit]:hover {
+         background-color: #45a049;
+         }
+         .container {
+         border-radius: 5px;
+         background-color: #f2f2f2;
+         padding: 20px;
+         }
+         .col-25 {
+         float: left;
+         width: 15%;
+         margin-top: 6px;
+         }
+         .col-75 {
+         float: left;
+         width: 85%;
+         margin-top: 6px;
+         }
+         /* Clear floats after the columns */
+         .row:after {
+         content: "";
+         display: table;
+         clear: both;
+         }
+         /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+         @media screen and (max-width: 600px) {
+         .col-25, .col-75, input[type=submit] {
+         width: 100%;
+         margin-top: 0;
+         }
+         }
+      </style>
+   </head>
+   <body style="background: url(https://media.istockphoto.com/photos/green-natural-background-picture-id649675876?k=6&m=649675876&s=612x612&w=0&h=TSRg-zhV5L7mxb-Wr1ft73JuhZ0qVgQaARa2JMANoy0=); background-size: 200%">
+      <div class="nav">
+         <ul>
+            <li class="navbar">
+               <h1>SAVE THE PLANET</h1>
+            </li>
+            <li class="navbar"><a href="OurWebSite.html">Home</a></li>
+            <li class="navbar"><a href="Donation.html">Donation</a></li>
+            <li class="navbar"><a href="Contacts.html">Contacts</a></li>
+         </ul>
+      </div>
+      <h3>You can be one of the many peope who influence the way our planet looks like. Let's add more recylcing bins on the street of NYC!</h3>
+      <h3>If you want to donate to our <a href="Contacts.html">company</a>, fill the application:</h3>
+      <div class="container">
+         <form action="Thank you.html">
+            <div class="row">
+               <div class="col-25">
+                  <label for="fname">First Name</label>
+               </div>
+               <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25">
+                  <label for="lname">Last Name</label>
+               </div>
+               <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25">
+                  <label for="lname">Email</label>
+               </div>
+               <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your email">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25">
+                  <label for="country">Country</label>
+               </div>
+               <div class="col-75">
+                  <select id="country" name="country">
+                     <option value="usa">USA</option>
+                     <option value="australia">Australia</option>
+                     <option value="canada">Canada</option>
+                  </select>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25">
+                  <label for="lname"> Card Number</label>
+               </div>
+               <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your card number">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25">
+                  <label for="lname">Amount</label>
+               </div>
+               <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Amount of money you would like to donate">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-25">
+                  <label for="subject">Comment</label>
+               </div>
+               <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="Write you comments and suggestions" style="height:200px"></textarea>
+               </div>
+            </div>
+            <div class="row">
+               <input type="submit" value="Submit">
+            </div>
+         </form>
+      </div>
+      <div class="footer">
+         <p class="address">695 Park Ave New York, NY 10065</p>
+         <p class="copy">&copy; 2019.</p>
+      </div>
+   </body>
 </html>
